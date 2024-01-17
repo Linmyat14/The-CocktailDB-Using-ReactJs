@@ -1,0 +1,348 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #f8f9fa;
+  padding: 0px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body {
+  background-color: #fff3b0;
+}
+.website-name{
+  padding: 20px 0;
+}
+.website-name span {
+  color: goldenrod;
+}
+.nav-links ul{
+  display: flex;
+  list-style-type: none;
+}
+.nav-item{
+  font-size: 20px;
+  padding: 24px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  text-transform: uppercase;
+  color: #000000;
+}
+.nav-item:hover{
+  background-color: #000000;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #000000;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 40px;
+} 
+.section-title{
+  margin-bottom: 50px;
+  justify-self: center;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: auto;
+}
+.cocktail-center {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* display: inline; */
+  justify-content: center;
+}
+.cocktails-card{
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  display: inline-block;
+  width: 350px;
+  margin: 15px;
+  border-radius: 5px;
+  height: 450px;
+  background-color: #ffffe0;
+}
+.name {
+  text-transform: uppercase;
+}
+.info {
+  text-transform: uppercase;
+  color: grey;
+}
+.img {
+  width: 100%;
+  height: 50%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  object-fit: cover;
+  object-position: top;
+}
+.glass{
+  color: rgb(182, 167, 167);
+  margin-bottom: 20px;
+}
+.details-btn {
+  /* border: 1px solid goldenrod; */
+  padding: 8px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  background-color: #212121;
+  color: white;
+  font-size: 15px;
+}
+.cocktails-card a:hover{
+  opacity: 0.7;
+  /* background-color: white;
+  color: goldenrod; */
+}
+.search-form {
+  text-align: center;
+  justify-content: center;
+  background-color: #ffffe0;
+  padding: 35px;
+  width: 600px;
+  margin: auto;
+  border-radius: 10px;
+}
+.search-label {
+  font-size: 22px;
+  font-weight: 400;
+  display: block;
+}
+.search-input{
+  margin-top: 20px;
+  border: 0.5px solid goldenrod;
+  border-radius: 5px;
+  width: 70%;
+  height: 40px;
+  font-size: 20px;
+  padding-right: 5px;
+}
+.search-input:focus {
+  border: 1px solid white;
+}
+.single-cocktail {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+/* back home btn CSS */
+.back-home-btn {
+  width: 200px;
+  align-items: center;
+  background-color: #fefae0;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.back-home-btn:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.back-home-btn:hover:after {
+  transform: translate(0, 0);
+}
+
+.back-home-btn:active {
+  background-color: #faf0ca;
+  outline: 0;
+}
+
+.back-home-btn:hover {
+  outline: 0;
+}
+
+.single-cocktail-page {
+  margin-right: 70px;
+  margin-bottom: 50px;
+}
+.cocktail-product {
+  display: flex;
+  margin-top: 20px;
+}
+.cocktail-img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 50px;
+  left: 100px;
+}
+.cocktail-details{
+  background-color: #fcbf49;
+  width: 100%;
+  height: 400px;
+  padding-left: 140px;
+  padding-right: 20px;
+  padding-top: 20px;
+  color: #001219;
+  border-radius: 5px;
+}
+.cocktail-details h1{
+  margin-bottom: 30px;
+}
+.product-details{
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.about {
+  width: 80%;
+  margin: 40px auto;
+}
+.about-text{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.newsletter-section {
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  margin: 50px 100px;
+  justify-content: start;
+
+}
+.newsletter-section img{
+  width: 50%;
+}
+.newsletter {
+  padding-left: 40px;
+}
+.newsletter h1 {
+  font-size: 35px;
+}
+.newsletter p{
+  margin-top: 10px;
+}
+.newsletter form {
+  margin-top: 20px;
+}
+.newsletter-input {
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 15px;
+  transition: .2s ease-in-out;
+}
+.newsletter:focus{
+  font-size: 20px;
+}
+.newsletter-btn {
+  border: none;
+  padding: 21px;
+  cursor: pointer;
+  background-color: #fcbf49;
+  border-radius: 5px;
+  transition: .2s ease-in-out;
+  margin-top: px;
+}
+.newsletter-btn:hover{
+  opacity: 0.8;
+}
+/* Media Queries */
+@media (min-width: 768px) {
+  .back-home-btn {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 992px) {
+  .single-cocktail-page{
+    margin: 0 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+  .cocktail-product{
+    display: block;
+  }
+  .cocktail-details{
+    padding-top: 70px;
+    padding-left: 50px;
+  }
+  .newsletter-section{
+    flex-direction: column;
+  }
+  .newsletter{
+    margin-top: 50px;
+  }
+  .newsletter h1 {
+    font-size: 30px; 
+  }
+}
+@media (max-width: 576px){
+  .newsletter{
+    text-align: center;
+  }
+  .newsletter input {
+    width: 100%;
+  }
+  .newsletter-btn{
+    text-align: center;
+    margin-top: 10px;
+  }
+}
